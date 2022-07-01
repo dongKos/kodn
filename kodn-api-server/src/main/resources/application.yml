@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: 'jdbc:mysql://localhost:13306/dongko_board?useLegacyDatetimeCode=false&serverTimezone=GMT&useUnicode=true&useSSL=false'
+    username: root
+    password: it-test
+
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+
