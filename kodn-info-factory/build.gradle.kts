@@ -1,10 +1,13 @@
 import org.springframework.boot.gradle.tasks.bundling.BootJar
 
 plugins {
+    idea
+    kotlin("plugin.spring")
 }
 
 dependencies {
-    api(project(":kodn-info-factory"))
+    implementation("org.springframework.boot:spring-boot-starter-validation")
+    api(project(":kodn-common"))
 }
 
 tasks.getByName<BootJar>("bootJar") {

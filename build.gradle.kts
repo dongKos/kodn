@@ -42,10 +42,6 @@ subprojects {
         implementation("org.jetbrains.kotlin:kotlin-reflect")
         implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
-        //lombok
-        compileOnly("org.projectlombok:lombok")
-        annotationProcessor("org.projectlombok:lombok")
-
         //DB connect
         runtimeOnly("com.h2database:h2")
         runtimeOnly("mysql:mysql-connector-java")
@@ -82,20 +78,7 @@ subprojects {
         }
     }
 }
-
-//api <- domain 의존
-project(":kodn-api-server") {
-    dependencies {
-        implementation(project(":kodn-service"))
-    }
-}
-
-project(":kodn-service") {
-    dependencies {
-        api(project(":kodn-domain"))
-    }
-}
-
-project(":kodn-domain") {
-
+// 실행할 메인 클래스가 없는 모듈에 추가함.
+tasks.getByName<org.springframework.boot.gradle.tasks.bundling.BootJar>("bootJar") {
+    enabled = false
 }

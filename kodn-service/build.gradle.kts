@@ -1,3 +1,12 @@
-fun plugins() {}
+import org.springframework.boot.gradle.tasks.bundling.BootJar
 
-fun dependencies() {}
+plugins {
+}
+
+dependencies {
+    api(project(":kodn-domain"))
+}
+
+tasks.getByName<BootJar>("bootJar") {
+    enabled = false
+}

@@ -4,7 +4,6 @@ plugins {
 }
 
 dependencies {
-    api(project(":kodn-info-factory"))
 }
 
 tasks.getByName<BootJar>("bootJar") {

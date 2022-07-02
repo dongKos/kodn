@@ -1,5 +1,6 @@
 package com.dongko.kodn
 
+import com.dongko.kodn.member.entity.Member
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 

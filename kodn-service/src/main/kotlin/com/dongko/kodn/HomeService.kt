@@ -1,5 +1,7 @@
 package com.dongko.kodn
 
+import com.dongko.kodn.member.entity.Member
+import com.dongko.kodn.member.repository.MemberRepository
 import org.springframework.stereotype.Service
 
 @Service
