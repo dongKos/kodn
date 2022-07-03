@@ -4,10 +4,9 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: 'jdbc:mysql://localhost:13306/dongko_board?useLegacyDatetimeCode=false&serverTimezone=GMT&useUnicode=true&useSSL=false'
+    url: 'jdbc:mysql://localhost:13306/kodn?useLegacyDatetimeCode=false&serverTimezone=GMT&useUnicode=true&useSSL=false'
     username: root
     password: it-test
-
 
   jpa:
     show-sql: true

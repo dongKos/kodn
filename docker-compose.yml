@@ -7,7 +7,7 @@ services:
       - "13306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: 'it-test'
-      MYSQL_DATABASE: 'bora_test'
+      MYSQL_DATABASE: 'kodn'
     command: --character-set-server=utf8mb4 --max_connections=4096 --general_log=1 --general_log_file=/var/lib/mysql/general.log --innodb_print_all_deadlocks=1 --log_error=/var/lib/mysql/error.log
     ulimits:
       nofile:
