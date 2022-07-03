@@ -1,4 +1,4 @@
-package com.dongko.kodn.member.controller
+package com.dongko.kodn.member.controller.v1
 
 import com.dongko.kodn.member.dto.MemberJoinRequest
 import com.dongko.kodn.member.dto.MemberJoinResponse
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-@RequestMapping("/member")
+@RequestMapping("/v1/member")
 @Validated
 class MemberController(
     private val memberApiService: MemberApiService

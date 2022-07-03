@@ -7,4 +7,6 @@ data class MemberJoinRequest(
     val name: String,
     @field:NotBlank
     val email: String,
+    @field:NotBlank
+    var password: String,
 )
