@@ -8,6 +8,9 @@ repositories {
 
 dependencies {
     implementation(project(":kodn-service"))
+
+    implementation("com.nimbusds:nimbus-jose-jwt:6.0.2")
+
     testImplementation("org.springframework.boot:spring-boot-starter-test") {
         exclude(module = "junit")
         exclude(module = "mockito-core")
